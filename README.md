@@ -14,6 +14,9 @@ All layers are designed with tensorlayer and backend with tensorflow
 
         base = tf.constant_initializer(value=0.1)
         Weight = tf.truncated_normal_initializer(stddev=0.04)
+<p align="center">
+  <img src="1.jpg">
+</p>
 
 
 Reference:
