@@ -17,6 +17,17 @@ All layers are designed with tensorlayer and backend with tensorflow
 <p align="center">
   <img src="1.jpg">
 </p>
+Network architecture I designed two independent network layers for each and RGB and Depth Images 
+        networkRGB = tl.layers.InputLayer(x, name='input_layerRGB')
+        networkDepth = tl.layers.InputLayer(x_depth, name='input_layerDepth') 
+
+for RGB the convolution layer is shaped with 3,3,3,64 indeed the network input structure is same as input size of the pictures which means 32 by 32 so the place holder is designed in the same way with inputs and outputs
+
+    x = tf.placeholder(tf.float32, shape=[None, 32,32,3], name='x')
+    x_depth = tf.placeholder(tf.float32, shape=[None,32,32,1], name='x_depth')
+    y_ = tf.placeholder(tf.int64, shape=[None], name='y_')  
+
+Here because we have 3 colors for RGB and 1 channel for depth (x and x_depth) and our output y_ is undefined because it will store for both RGB and Depth one. 
 
 
 Reference:
