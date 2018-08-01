@@ -1,4 +1,7 @@
-# robotics_recognition
+# Robotics Multimodal & Deep Learning 
+Inspired by '''Multimodal Deep Learning for Robust RGB-D Object Recognition
+Andreas Eitel Jost Tobias Springenberg Luciano Spinello Martin Riedmiller Wolfram Burgard '''
+
 Robotics Multimodal Deep Learning for Object Recognition
 
 
